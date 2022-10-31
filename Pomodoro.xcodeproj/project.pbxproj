@@ -13,7 +13,6 @@
 		307A0C1829103EB6005936A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A0C1629103EB6005936A8 /* Main.storyboard */; };
 		307A0C1A29103EB8005936A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A0C1929103EB8005936A8 /* Assets.xcassets */; };
 		307A0C1D29103EB8005936A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A0C1B29103EB8005936A8 /* LaunchScreen.storyboard */; };
-		307A0C2529104E0F005936A8 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A0C2429104E0F005936A8 /* TimerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		307A0C1929103EB8005936A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307A0C1C29103EB8005936A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307A0C1E29103EB8005936A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		307A0C2429104E0F005936A8 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				307A0C1229103EB6005936A8 /* SceneDelegate.swift */,
 				307A0C1429103EB6005936A8 /* ViewController.swift */,
 				307A0C1629103EB6005936A8 /* Main.storyboard */,
-				307A0C2429104E0F005936A8 /* TimerController.swift */,
 				307A0C1929103EB8005936A8 /* Assets.xcassets */,
 				307A0C1B29103EB8005936A8 /* LaunchScreen.storyboard */,
 				307A0C1E29103EB8005936A8 /* Info.plist */,
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				307A0C1529103EB6005936A8 /* ViewController.swift in Sources */,
-				307A0C2529104E0F005936A8 /* TimerController.swift in Sources */,
 				307A0C1129103EB6005936A8 /* AppDelegate.swift in Sources */,
 				307A0C1329103EB6005936A8 /* SceneDelegate.swift in Sources */,
 			);
