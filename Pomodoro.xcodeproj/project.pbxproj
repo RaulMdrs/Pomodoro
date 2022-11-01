@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3048FD4D29118B770027739D /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048FD4C29118B770027739D /* AudioController.swift */; };
+		3048FD512911933C0027739D /* alarm_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3048FD5029118CF90027739D /* alarm_1.wav */; };
+		3048FD532911937B0027739D /* alarm.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 3048FD522911937B0027739D /* alarm.WAV */; };
+		3048FD55291196640027739D /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048FD54291196640027739D /* AudioViewController.swift */; };
+		3048FD58291199410027739D /* alarm_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3048FD56291199410027739D /* alarm_3.mp3 */; };
+		3048FD59291199410027739D /* alarm_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3048FD57291199410027739D /* alarm_2.wav */; };
 		307A0C1129103EB6005936A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A0C1029103EB6005936A8 /* AppDelegate.swift */; };
 		307A0C1329103EB6005936A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A0C1229103EB6005936A8 /* SceneDelegate.swift */; };
 		307A0C1529103EB6005936A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A0C1429103EB6005936A8 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3048FD4C29118B770027739D /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		3048FD5029118CF90027739D /* alarm_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_1.wav; sourceTree = "<group>"; };
+		3048FD522911937B0027739D /* alarm.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.WAV; sourceTree = "<group>"; };
+		3048FD54291196640027739D /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		3048FD56291199410027739D /* alarm_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_3.mp3; sourceTree = "<group>"; };
+		3048FD57291199410027739D /* alarm_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_2.wav; sourceTree = "<group>"; };
 		307A0C0D29103EB6005936A8 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307A0C1029103EB6005936A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307A0C1229103EB6005936A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3048FD4F29118CF10027739D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3048FD56291199410027739D /* alarm_3.mp3 */,
+				3048FD57291199410027739D /* alarm_2.wav */,
+				3048FD5029118CF90027739D /* alarm_1.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		307A0C0429103EB6005936A8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +78,17 @@
 		307A0C0F29103EB6005936A8 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				3048FD4F29118CF10027739D /* sounds */,
 				307A0C1029103EB6005936A8 /* AppDelegate.swift */,
 				307A0C1229103EB6005936A8 /* SceneDelegate.swift */,
 				307A0C1429103EB6005936A8 /* ViewController.swift */,
+				3048FD54291196640027739D /* AudioViewController.swift */,
 				307A0C1629103EB6005936A8 /* Main.storyboard */,
+				3048FD4C29118B770027739D /* AudioController.swift */,
 				307A0C1929103EB8005936A8 /* Assets.xcassets */,
 				307A0C1B29103EB8005936A8 /* LaunchScreen.storyboard */,
 				307A0C1E29103EB8005936A8 /* Info.plist */,
+				3048FD522911937B0027739D /* alarm.WAV */,
 			);
 			path = Pomodoro;
 			sourceTree = "<group>";
@@ -125,8 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3048FD512911933C0027739D /* alarm_1.wav in Resources */,
 				307A0C1D29103EB8005936A8 /* LaunchScreen.storyboard in Resources */,
+				3048FD58291199410027739D /* alarm_3.mp3 in Resources */,
 				307A0C1A29103EB8005936A8 /* Assets.xcassets in Resources */,
+				3048FD59291199410027739D /* alarm_2.wav in Resources */,
+				3048FD532911937B0027739D /* alarm.WAV in Resources */,
 				307A0C1829103EB6005936A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +170,9 @@
 			files = (
 				307A0C1529103EB6005936A8 /* ViewController.swift in Sources */,
 				307A0C1129103EB6005936A8 /* AppDelegate.swift in Sources */,
+				3048FD4D29118B770027739D /* AudioController.swift in Sources */,
 				307A0C1329103EB6005936A8 /* SceneDelegate.swift in Sources */,
+				3048FD55291196640027739D /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

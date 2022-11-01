@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var typePomodoro: UISegmentedControl!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var buttonControl: UIButton!
+    var audio = AudioController()
     
     var typeOfPomodoro : TypePomodoro = .pomodoro
     var timer = Timer()
@@ -26,11 +27,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AudioController.nameSound = "alarm_1"
+       // AudioController.PlaySound()
         redefine()
+        print(AudioController.player?.volume ?? 0.12345)
     }
 
     func convertTimeToLabel(minute : Int, seconds : Int){
         timeString = ""
+        
+        if time.minutes == 0 && time.seconds == 0 {
+            timer.invalidate()
+            redefine()
+            timeString = "00:00"
+            updateButtonTitle(title: "Start again")
+            //audioController.PlaySound(name: "alarm")
+            AudioController.PlaySound()
+            return
+        }
+        
         if time.minutes < 10{
             timeString.append("0\(time.minutes):")
         }else{
@@ -47,14 +62,6 @@ class ViewController: UIViewController {
         }
         else{
             timeString.append("\(time.seconds)")
-        }
-        
-        
-        if time.minutes == 0 && time.minutes == 0 {
-            timer.invalidate()
-            redefine()
-            timeString = "00:00"
-            updateButtonTitle(title: "Start again")
         }
         
         timerLabel.text = timeString
